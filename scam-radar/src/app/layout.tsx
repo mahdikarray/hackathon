@@ -25,6 +25,11 @@ export const metadata: Metadata = {
     locale: "en_US",
     siteName: "Scam Radar",
   },
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
 };
 
 export const viewport: Viewport = {

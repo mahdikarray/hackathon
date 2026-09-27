@@ -125,6 +125,14 @@ export const translations: Record<Language, Translations> = {
     footerLearn: "Learn",
     footerTrust: "Why trust us",
     footerRights: "All rights reserved.",
+
+notFoundTitle: "Page not found",
+    notFoundDesc: "The page you're looking for doesn't exist or has been moved.",
+    errorTitle: "Something went wrong",
+    errorDesc: "We ran into an unexpected problem. Please try again or go back home.",
+    errorDetails: "Error details",
+    errorReportNote: "This error has been logged. If it persists, please contact support.",
+    goHome: "Go home",
     responsibleAi: {
       title: "Responsible AI & your data",
       intro:
@@ -295,8 +303,17 @@ export const translations: Record<Language, Translations> = {
     ctaSub: "Commencez en quelques secondes. Sans inscription ni suivi.",
     footerProduct: "Produit",
     footerLearn: "Apprendre",
-    footerTrust: "Pourquoi nous croire",
+footerTrust: "Pourquoi nous croire",
     footerRights: "Tous droits réservés.",
+
+    notFoundTitle: "Page introuvable",
+    notFoundDesc: "La page que vous cherchez n'existe pas ou a été déplacée.",
+    errorTitle: "Une erreur est survenue",
+    errorDesc: "Nous avons rencontré un problème inattendu. Veuillez réessayer ou revenir à l'accueil.",
+    errorDetails: "Détails de l'erreur",
+    errorReportNote: "Cette erreur a été journalisée. Si le problème persiste, contactez le support.",
+    goHome: "Accueil",
+
     responsibleAi: {
       title: "IA responsable et vos données",
       intro:
@@ -469,6 +486,14 @@ export const translations: Record<Language, Translations> = {
     footerLearn: "تعلّم",
     footerTrust: "لماذا تثق بنا",
     footerRights: "جميع الحقوق محفوظة.",
+        notFoundTitle: "الصفحة غير موجودة",
+    notFoundDesc: "الصفحة التي تبحثث عنها غير موجودة أو تم نقلها.",
+    errorTitle: "حدث خطأ ما",
+    errorDesc: "واجهنا مشكلة غير متوقعة. يرجى المحاولة مرة أخرى أو العودة للرئيسية.",
+    errorDetails: "تفاصير الخطأ",
+    errorReportNote: "تم تسجيل هذا الخطأ. إذا استمر، يرجى الاتصال بالدعم.",
+    goHome: "الرئيسية",
+
     responsibleAi: {
       title: "الذكاء الاصطناعي المسؤول وبياناتك",
       intro:

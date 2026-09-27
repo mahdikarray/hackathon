@@ -11,6 +11,8 @@ Built for remittance senders and receivers, first-time mobile-money users, and
 anyone who has never been taught how fraud works. Available in **English,
 French and Arabic**, with full right-to-left support.
 
+🔗 **Live demo: https://scam-radar-tau.vercel.app**
+
 ---
 
 ## The problem
