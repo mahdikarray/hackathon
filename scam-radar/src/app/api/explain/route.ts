@@ -123,7 +123,10 @@ async function requestGroq(
         model,
         messages: buildMessages(text, lang),
         max_tokens: MAX_TOKENS,
-        temperature: 0.2,
+        // A risk score should be reproducible: the same message must not flip
+        // between "safe" and "risky" on a second scan. At 0.2 the model still
+        // occasionally invented a phishing technique that was not present.
+        temperature: 0,
         // Guarantees a parseable JSON body, which removes the whole class of
         // failures we previously hit from truncation or stray prose.
         response_format: { type: "json_object" },

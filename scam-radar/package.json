@@ -8,6 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "test": "tsc -p tsconfig.test.json && node --test \".test-build/tests/*.test.js\"",
+    "eval": "tsc -p tsconfig.eval.json && node .test-build/eval/run.js",
+    "eval:offline": "npm run eval -- --base-url http://localhost:0",
     "test:clean": "node -e \"require('fs').rmSync('.test-build',{recursive:true,force:true})\""
   },
   "dependencies": {

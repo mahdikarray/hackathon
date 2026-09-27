@@ -162,6 +162,7 @@ automatically — no code change needed.
 | `npm run build` | Production build |
 | `npm start` | Serve the production build |
 | `npm test` | Compile the pure logic and run the test suite |
+| `npm run eval` | Run the AI evaluation harness (needs the app running) |
 | `npm run lint` | ESLint |
 | `npm run test:clean` | Remove the `.test-build` output directory |
 
@@ -193,9 +194,75 @@ Coverage includes:
 - **`i18n.test.ts`** — all three languages define exactly the same keys, with no
   blank values.
 
+- **`eval/metrics.ts`** — the scoring maths, and the pass/fail gates
+- **`tests/eval-metrics.test.ts`** — confusion-matrix maths, gate behaviour, and
+  dataset integrity.
+
 Two real bugs were found by these tests and are now fixed: a stateful
 `lastIndex` on the safe-practice regexes that made scores depend on scan order,
 and Arabic credential-phishing messages scoring "low".
+
+---
+
+## AI evaluation
+
+Claims about model quality are only worth something if they are measured.
+`npm run eval` calls the real `/api/explain` endpoint against a hand-labelled set
+of 36 cases — 12 per language, split between scams and legitimate messages, plus
+two prompt-injection attempts — and writes [`eval/report.md`](eval/report.md).
+
+```bash
+npm run dev            # in one terminal
+npm run eval           # in another
+npm run eval -- --only en-01,fr-02   # a subset
+node .test-build/eval/probe.js fr-08 6   # run one case 6x to check stability
+```
+
+Latest run:
+
+| Metric | AI | Rules engine |
+| --- | --- | --- |
+| Recall on real scams | **100%** (17/17) | 76% (13/17) |
+| Precision | **100%** (17/17) | 100% |
+| JSON parse rate | 100% | n/a, deterministic |
+| Answered in the requested language | 100% | n/a |
+| Prompt injections resisted | 100% (2/2) | n/a |
+| Latency p50 / p95 | 676ms / 2351ms | 0ms, offline |
+
+Six gates gate the run, and it exits non-zero if any fails: recall ≥ 0.9,
+precision ≥ 0.7, accuracy ≥ 0.85, and parse rate, language compliance and
+injection resistance all exactly 1.
+
+**The labels are not derived from `detect()`.** They were assigned by hand
+before running the model. If the labels came from our own regexes, the harness
+would only be measuring whether the AI agrees with the rules engine, which is
+the thing it exists to check independently.
+
+### What the harness found
+
+The rules engine misses about one scam in four. Looking at the report, all four
+misses matched the right rules but landed just under the 30-point threshold,
+because the +10 multi-rule bonus requires three or more rules and a two-rule
+match caps out below it:
+
+| Case | Matched | Score |
+| --- | --- | --- |
+| `en-03` | `credential_request` + `impersonation` | 20 |
+| `en-04` | `new_number_family` + `secrecy` | 26 |
+| `en-06` | `too_good` only | 13 |
+| `fr-04` | `impersonation` + `new_number_family` | 29 |
+
+These are left as-is and documented in the report. Reweighting the rules until
+this table looked better would be measuring the wrong thing — the gap is the
+reason a second, independent detector is worth running at all.
+
+The harness also caught a real product bug. At `temperature: 0.2` the model
+scored one legitimate French appointment reminder anywhere from 5 to 50 across
+six identical requests, inventing a "phishing technique" that was not in the
+text, and crossing the risk threshold on one run. A scanner that changes its
+verdict when you paste the same message twice is worse than useless, so
+`temperature` is now `0`; the same six runs return an identical score and
+identical reasoning.
 
 ---
 
@@ -220,6 +287,12 @@ src/
     ├── i18n.tsx                 # provider, persistence, RTL
     └── game-messages.*.json     # 20 scenarios per language
 tests/                           # node:test suites
+eval/
+├── dataset.ts                   # 36 hand-labelled cases
+├── metrics.ts                   # scoring maths + quality gates
+├── run.ts                       # harness (npm run eval)
+├── probe.ts                     # repeat one case to check stability
+└── report.md                    # latest results, committed
 ```
 
 ---

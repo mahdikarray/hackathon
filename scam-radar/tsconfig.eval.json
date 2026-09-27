@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.test.json",
+  "include": [
+    "src/lib/rules.ts",
+    "src/lib/detector.ts",
+    "src/lib/agreement.ts",
+    "src/lib/ai-parse.ts",
+    "src/lib/i18n-dictionary.ts",
+    "src/lib/game-messages.ts",
+    "eval/dataset.ts",
+    "eval/metrics.ts",
+    "eval/run.ts",
+    "eval/probe.ts",
+    "tests/**/*.ts"
+  ]
+}

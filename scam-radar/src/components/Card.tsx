@@ -13,8 +13,8 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
   ({ children, variant = "default", padding = "md", hover = false, animate = true, className = "", ...props }, ref) => {
     const variants = {
       default: "card bg-surface border-border",
-      elevated: "card bg-surface border-border shadow-xl shadow-black/30",
-      outlined: "card bg-transparent border-border/50",
+      elevated: "card bg-surface border-border shadow-lg shadow-slate-200",
+      outlined: "card bg-surface border-border",
     };
 
     const paddings = {
@@ -25,7 +25,7 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
     };
 
     const hoverStyles = hover
-      ? "transition-all duration-200 hover:shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:border-accent/30 hover:-translate-y-0.5 cursor-pointer"
+      ? "transition-all duration-200 hover:shadow-lg hover:shadow-slate-200 hover:border-accent/40 hover:-translate-y-0.5 cursor-pointer"
       : "";
 
     const animationStyles = animate ? "animate-fade-in animate-slide-up" : "";

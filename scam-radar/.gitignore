@@ -44,3 +44,6 @@ next-env.d.ts
 
 # test build output
 .test-build
+
+# eval artifacts (report.md is committed on purpose)
+.test-build
