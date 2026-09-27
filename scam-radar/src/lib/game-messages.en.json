@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "text": "URGENT: Your account will be closed in 2 hours! Click here to verify your identity immediately: bit.ly/verify-account",
+    "isScam": true,
+    "explanation": "This message uses urgency pressure, a suspicious shortened link, and impersonation to trick you into giving away credentials."
+  },
+  {
+    "id": 2,
+    "text": "Hi Mom, it's me. I've got a new number because I lost my phone. Can you send me $200 for rent? I'll pay you back tomorrow.",
+    "isScam": true,
+    "explanation": "Classic family emergency scam with new number claim, urgency, and request for money via unusual methods."
+  },
+  {
+    "id": 3,
+    "text": "Your package delivery failed. Please reschedule at: ups-delivery-tracking.xyz/reschedule",
+    "isScam": true,
+    "explanation": "Fake delivery notification with suspicious domain (.xyz) and link to steal personal info."
+  },
+  {
+    "id": 4,
+    "text": "Congratulations! You've won $50,000 in our international lottery! To claim your prize, send $500 processing fee via Western Union.",
+    "isScam": true,
+    "explanation": "Prize scam with upfront fee demand and unusual payment method (Western Union). Legitimate lotteries never ask winners to pay fees."
+  },
+  {
+    "id": 5,
+    "text": "This is Bank Security. We detected suspicious activity. Reply with your PIN and OTP to secure your account.",
+    "isScam": true,
+    "explanation": "Impersonation as bank security requesting credentials (PIN, OTP). Banks never ask for these via text."
+  },
+  {
+    "id": 6,
+    "text": "IRS NOTICE: You owe $2,500 in back taxes. Pay now via gift cards or we'll issue an arrest warrant. Call 1-800-XXX-XXXX.",
+    "isScam": true,
+    "explanation": "Government impersonation with threat of arrest, demanding payment via gift cards. The IRS never demands gift cards or threatens arrest by phone."
+  },
+  {
+    "id": 7,
+    "text": "Hey, it's Sarah from work. Can you buy 5 $100 Apple gift cards for client gifts? I'll reimburse you. Send codes when done.",
+    "isScam": true,
+    "explanation": "Business email compromise / impersonation requesting gift cards. Legitimate colleagues don't ask for gift card codes via text."
+  },
+  {
+    "id": 8,
+    "text": "Your monthly statement is ready. View it securely at: bankofamerica.com/statements",
+    "isScam": false,
+    "explanation": "Legitimate bank notification with official domain (bankofamerica.com) and no urgent action or credential requests."
+  },
+  {
+    "id": 9,
+    "text": "Investment opportunity: Guaranteed 20% monthly returns with zero risk! Invest $1000 today, get $5000 in 30 days. Limited spots!",
+    "isScam": true,
+    "explanation": "Too good to be true: guaranteed high returns with zero risk, urgency (limited spots), classic investment scam."
+  },
+  {
+    "id": 10,
+    "text": "Reminder: Your dentist appointment is tomorrow at 2 PM. Reply Y to confirm or call 555-0123 to reschedule.",
+    "isScam": false,
+    "explanation": "Normal appointment reminder with legitimate contact info, no pressure, no links, no credential requests."
+  },
+  {
+    "id": 11,
+    "text": "VERIFICATION REQUIRED: Your WhatsApp account will be deactivated. Verify now: whatsapp-verify.tk/code",
+    "isScam": true,
+    "explanation": "Impersonation of WhatsApp with threat of deactivation, suspicious .tk domain, credential phishing attempt."
+  },
+  {
+    "id": 12,
+    "text": "Grandma, it's me! I'm in jail and need $3000 for bail. Don't tell Mom or Dad, they'll be mad. Send Bitcoin to this address: 1BvBMSE...",
+    "isScam": true,
+    "explanation": "Grandparent scam: family emergency, secrecy demand, unusual payment (Bitcoin), emotional manipulation."
+  },
+  {
+    "id": 13,
+    "text": "Your Uber ride receipt: $18.50 from Downtown to Airport. Thanks for riding with Uber! support@uber.com",
+    "isScam": false,
+    "explanation": "Legitimate receipt with official email domain, no action required, no threats or unusual requests."
+  },
+  {
+    "id": 14,
+    "text": "FINAL NOTICE: Social Security Administration. Your SSN is suspended due to fraud. Press 1 to speak with an agent now.",
+    "isScam": true,
+    "explanation": "Government impersonation (SSA), threat (SSN suspended), urgency, pressure to act immediately."
+  },
+  {
+    "id": 15,
+    "text": "Thanks for your order #12345! Your estimated delivery is Dec 15. Track at: amazon.com/orders/12345",
+    "isScam": false,
+    "explanation": "Legitimate order confirmation with official Amazon domain, order details, tracking link to known site."
+  },
+  {
+    "id": 16,
+    "text": "I'm a lawyer representing a deceased client who left $4.5M with no heirs. You're the beneficiary. Reply with your bank details to claim.",
+    "isScam": true,
+    "explanation": "Advance-fee fraud / inheritance scam: too good to be true, requests bank details, classic 419 scam pattern."
+  },
+  {
+    "id": 17,
+    "text": "Security Alert: New login to your account from Chicago. If this wasn't you, secure your account: chase.com/security",
+    "isScam": false,
+    "explanation": "Legitimate security alert with official domain (chase.com), no credential request in message, directs to official site."
+  },
+  {
+    "id": 18,
+    "text": "Make $500/day working from home! No experience needed. Just pay $49 for training materials. Start tomorrow!",
+    "isScam": true,
+    "explanation": "Work-from-home scam: upfront fee for 'training', too good to be true earnings, pressure to start immediately."
+  },
+  {
+    "id": 19,
+    "text": "Your electricity bill of $127.50 is due Dec 20. Pay online at: pge.com/pay or call 1-800-743-5000",
+    "isScam": false,
+    "explanation": "Legitimate utility bill with official domain, due date, multiple payment options, no threats or urgency."
+  },
+  {
+    "id": 20,
+    "text": "FREE MONEY: Government stimulus check available! Click to claim your $1,400: stimulus-gov.xyz/claim",
+    "isScam": true,
+    "explanation": "Government impersonation with 'free money' lure, suspicious .xyz domain, credential harvesting link."
+  }
+]

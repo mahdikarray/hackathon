@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "text": "URGENT : Votre compte sera fermé dans 2 heures ! Cliquez ici pour vérifier votre identité immédiatement : bit.ly/verify-account",
+    "isScam": true,
+    "explanation": "Ce message utilise la pression d'urgence, un lien raccourci suspect et l'usurpation d'identité pour vous inciter à divulguer vos identifiants."
+  },
+  {
+    "id": 2,
+    "text": "Salut Maman, c'est moi. J'ai un nouveau numéro car j'ai perdu mon téléphone. Peux-tu m'envoyer 200 $ pour le loyer ? Je te rembourse demain.",
+    "isScam": true,
+    "explanation": "Arnaque classique à l'urgence familiale avec nouveau numéro, urgence et demande d'argent par des moyens inhabituels."
+  },
+  {
+    "id": 3,
+    "text": "La livraison de votre colis a échoué. Veuillez le reprogrammer sur : ups-delivery-tracking.xyz/reschedule",
+    "isScam": true,
+    "explanation": "Fausse notification de livraison avec domaine suspect (.xyz) et lien pour voler des informations personnelles."
+  },
+  {
+    "id": 4,
+    "text": "Félicitations ! Vous avez gagné 50 000 $ à notre loterie internationale ! Pour réclamer votre prix, envoyez 500 $ de frais de traitement via Western Union.",
+    "isScam": true,
+    "explanation": "Arnaque au gain avec demande de frais initiaux et méthode de paiement inhabituelle (Western Union). Les vraies loteries ne demandent jamais de frais aux gagnants."
+  },
+  {
+    "id": 5,
+    "text": "C'est la sécurité de la banque. Nous avons détecté une activité suspecte. Répondez avec votre code PIN et OTP pour sécuriser votre compte.",
+    "isScam": true,
+    "explanation": "Usurpation de la sécurité bancaire demandant des identifiants (PIN, OTP). Les banques ne demandent jamais ces informations par SMS."
+  },
+  {
+    "id": 6,
+    "text": "AVIS IRS : Vous devez 2 500 $ d'impôts arriérés. Payez maintenant par cartes cadeaux ou nous émettons un mandat d'arrêt. Appelez le 1-800-XXX-XXXX.",
+    "isScam": true,
+    "explanation": "Usurpation d'identité gouvernementale avec menace d'arrestation, exigeant un paiement par cartes cadeaux. L'IRS n'exige jamais de cartes cadeaux ni ne menace d'arrestation par téléphone."
+  },
+  {
+    "id": 7,
+    "text": "Salut, c'est Sarah du bureau. Peux-tu acheter 5 cartes cadeaux Apple de 100 $ pour des cadeaux clients ? Je te rembourse. Envoie les codes quand c'est fait.",
+    "isScam": true,
+    "explanation": "Compromission d'email professionnel / usurpation d'identité demandant des cartes cadeaux. De vrais collègues ne demandent pas de codes de cartes cadeaux par SMS."
+  },
+  {
+    "id": 8,
+    "text": "Votre relevé mensuel est prêt. Consultez-le en toute sécurité sur : bankofamerica.com/statements",
+    "isScam": false,
+    "explanation": "Notification bancaire légitime avec domaine officiel (bankofamerica.com) et aucune action urgente ni demande d'identifiants."
+  },
+  {
+    "id": 9,
+    "text": "Opportunité d'investissement : 20 % de rendement mensuel garanti sans risque ! Investissez 1000 $ aujourd'hui, obtenez 5000 $ dans 30 jours. Places limitées !",
+    "isScam": true,
+    "explanation": "Trop beau pour être vrai : rendements élevés garantis sans risque, urgence (places limitées), arnaque à l'investissement classique."
+  },
+  {
+    "id": 10,
+    "text": "Rappel : Votre rendez-vous chez le dentiste est demain à 14h. Répondez O pour confirmer ou appelez le 555-0123 pour reporter.",
+    "isScam": false,
+    "explanation": "Rappel de rendez-vous normal avec coordonnées légitimes, pas de pression, pas de liens, pas de demandes d'identifiants."
+  },
+  {
+    "id": 11,
+    "text": "VÉRIFICATION REQUISE : Votre compte WhatsApp sera désactivé. Vérifiez maintenant : whatsapp-verify.tk/code",
+    "isScam": true,
+    "explanation": "Usurpation de WhatsApp avec menace de désactivation, domaine .tk suspect, tentative de phishing d'identifiants."
+  },
+  {
+    "id": 12,
+    "text": "Mamie, c'est moi ! Je suis en prison et j'ai besoin de 3000 $ pour la caution. Ne dis rien à Maman ou Papa, ils seront fâchés. Envoie des Bitcoins à cette adresse : 1BvBMSE...",
+    "isScam": true,
+    "explanation": "Arnaque aux grands-parents : urgence familiale, exigence de secret, paiement inhabituel (Bitcoin), manipulation émotionnelle."
+  },
+  {
+    "id": 13,
+    "text": "Votre reçu de course Uber : 18,50 $ du centre-ville à l'aéroport. Merci d'avoir roulé avec Uber ! support@uber.com",
+    "isScam": false,
+    "explanation": "Reçu légitime avec domaine email officiel, aucune action requise, pas de menaces ni demandes inhabituelles."
+  },
+  {
+    "id": 14,
+    "text": "AVIS FINAL : Administration de la Sécurité Sociale. Votre SSN est suspendu pour fraude. Appuyez sur 1 pour parler à un agent maintenant.",
+    "isScam": true,
+    "explanation": "Usurpation gouvernementale (SSA), menace (SSN suspendu), urgence, pression pour agir immédiatement."
+  },
+  {
+    "id": 15,
+    "text": "Merci pour votre commande #12345 ! Votre livraison estimée est le 15 déc. Suivez sur : amazon.com/orders/12345",
+    "isScam": false,
+    "explanation": "Confirmation de commande légitime avec domaine Amazon officiel, détails de commande, lien de suivi vers un site connu."
+  },
+  {
+    "id": 16,
+    "text": "Je suis un avocat représentant un client décédé qui a laissé 4,5 M$ sans héritiers. Vous êtes le bénéficiaire. Répondez avec vos coordonnées bancaires pour réclamer.",
+    "isScam": true,
+    "explanation": "Fraude à frais d'avance / arnaque à l'héritage : trop beau pour être vrai, demande des coordonnées bancaires, motif classique d'arnaque 419."
+  },
+  {
+    "id": 17,
+    "text": "Alerte sécurité : Nouvelle connexion à votre compte depuis Chicago. Si ce n'était pas vous, sécurisez votre compte : chase.com/security",
+    "isScam": false,
+    "explanation": "Alerte de sécurité légitime avec domaine officiel (chase.com), pas de demande d'identifiants dans le message, redirige vers le site officiel."
+  },
+  {
+    "id": 18,
+    "text": "Gagnez 500 $/jour en travaillant depuis chez vous ! Aucune expérience nécessaire. Payez juste 49 $ pour le matériel de formation. Commencez demain !",
+    "isScam": true,
+    "explanation": "Arnaque au travail à domicile : frais initiaux pour 'formation', gains trop beaux pour être vrais, pression pour commencer immédiatement."
+  },
+  {
+    "id": 19,
+    "text": "Votre facture d'électricité de 127,50 $ est due le 20 déc. Payez en ligne sur : pge.com/pay ou appelez le 1-800-743-5000",
+    "isScam": false,
+    "explanation": "Facture de service public légitime avec domaine officiel, date d'échéance, multiples options de paiement, pas de menaces ni d'urgence."
+  },
+  {
+    "id": 20,
+    "text": "ARGENT GRATUIT : Chèque de relance gouvernemental disponible ! Cliquez pour réclamer vos 1 400 $ : stimulus-gov.xyz/claim",
+    "isScam": true,
+    "explanation": "Usurpation gouvernementale avec appât 'argent gratuit', domaine .xyz suspect, lien de collecte d'identifiants."
+  }
+]
